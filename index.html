@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PCBuild</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="scripts.js" defer></script>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="logo">
+      <h1>PCBuild</h1>
+    </div>
+    <div class="icons">
+      <span id="loginBtn">🔑</span>
+      <span id="cartBtn">🛒 <span id="cartCount">0</span></span>
+    </div>
+  </header>
+
+  <!-- Login Modal -->
+  <div id="loginModal" class="modal hidden">
+    <div class="login-box">
+      <button id="closeLoginBtn" class="close-btn">×</button>
+      <h2>Iniciar Sesión</h2>
+      <form>
+        <div class="input-group">
+          <label for="username">👤 Usuario</label>
+          <input type="text" id="username" name="username" required>
+        </div>
+        <div class="input-group">
+          <label for="password">🔒 Contraseña</label>
+          <input type="password" id="password" name="password" required>
+        </div>
+        <button type="submit" class="login-btn">Entrar</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Carrito Modal -->
+  <div id="cartSection" class="modal hidden">
+    <div class="modal-content cart-box">
+      <button id="closeCartBtn" class="close-btn">×</button>
+      <h2 class="cart-title">🛒 Carrito de Compras</h2>
+      <ul id="cartItems" class="cart-items"></ul>
+      <div class="cart-total">
+        <h3>Total:</h3>
+        <span>$<span id="totalPrice">0</span> MXN</span>
+      </div>
+      <button id="checkoutBtn">Ir a Pagar</button>
+    </div>
+  </div>
+
+  <main>
+    <!-- Sección de componentes -->
+    <section id="components">
+      <!-- Los componentes serán insertados dinámicamente aquí -->
+    </section>
+  </main>
+</body>
+</html>
