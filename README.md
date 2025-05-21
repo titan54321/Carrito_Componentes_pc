@@ -24,4 +24,4 @@ Este proyecto es una web que te permite seleccionar componentes de PC's y si alg
 
 ## Créditos
 
-Hecho con ❤️ por [Juan Luis](https://github.com/titan54321
+Hecho con ❤️ por [Juan Luis](https://github.com/titan54321)
